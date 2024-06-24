@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Activity 02-Showcase-Pruettapon Paritsiraprapa-65115800</title>
+    <meta charset="utf-8">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href=https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src=https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <!-- Icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+    <script>
+        function darkModeOn() {
+            var htmlElement = document.body.parentNode;
+            var status = htmlElement.getAttribute("data-bs-theme");
+            console.log(status);
+            if (status != null) {
+                console.log('dark_mode');
+                htmlElement.removeAttribute("data-bs-theme");
+                document.getElementById("mode").innerHTML = '<span class="material-symbols-outlined">dark_mode</span>';
+            } else {
+                console.log('light_mode');
+                htmlElement.setAttribute("data-bs-theme", "dark");
+                document.getElementById("mode").innerHTML = '<span class="material-symbols-outlined">light_mode</span>';
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="d-flex flex-nowrap">
+        <!-- Side Navigation Bar Start6 -->
+        <div class="d-flex flex-column vh-100 flex-shrink-0 bg-body-tertiary float-start position-fixed">
+            <ul class="nav nav-pills nav-flush flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="Resume.html" class="nav-link py-3 border-bottom rounded-0" aria-current="page">
+                        <span class="material-symbols-outlined">location_home</span> HOME
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active py-3 border-bottom rounded-0" aria-current="page">
+                        <span class="material-symbols-outlined">workspace_premium</span> SHOWCASE
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Side Navigation Bar End -->
+    </div>
+    <!-- Modal Start -->
+    <!-- Modal End -->
+    <!-- Top Navigation Bar Start -->
+    <nav class="navbar fixed-top navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item border-end pe-3 icon-link">
+                        <span class="material-symbols-outlined">assignment_ind</span> Pruettapon Paritsiraprapa
+                    </li>
+                    <li class="nav-item">
+                        <a href="Resume.html" class="nav-link icon-link" aria-current="page">
+                            <span class="material-symbols-outlined">location_home</span> HOME
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link icon-link active" aria-current="page">
+                            <span class="material-symbols-outlined">workspace_premium</span> SHOWCASE
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Top Navigation Bar End -->
+    <!-- Top Navigation Bar End -->
+    <!-- Showcase Panel Start -->
+    <div class="shadow w-75 mx-auto my-4 p-2 align-items-center">
+        <section name="Top" class="m-2 p-3 col-4 col-sm-2 bg-body-tertiary w-auto rounded-3 text-center">
+            <div class="row">
+                <div class="col-11">
+                    <h2>Showcase</h2>
+                </div>
+                <div class="col-1">
+                    <!-- Dark Mode Button Start -->
+                    <a class="icon-link float-end btn" onclick="darkModeOn()">
+                        <div id="mode" class="">
+                            <span class="material-symbols-outlined">dark_mode</span>
+                        </div>
+                    </a>
+                    <!-- Dark Mode Button End -->
+                </div>
+            </div>
+        </section>
+        <section name="Showcase">
+            <!-- Showcase Cards -->
+            <div class="row row-cols-1 p-2 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <a class="btn p-0 m-0" data-bs-toggle="modal" data-bs-target="#Trang">
+                            <img src="pt/trangpage.png" class="card-img-top img-fluid" alt="Smart Air Care IoT">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Miniproject HTML</h5>
+                            <p class="card-text">
+                                This mini project is part of the Web Design course that gave me a start in designing web pages for tourism in Trang Province, using HTML, Bootstrap, and CSS initially
+                            </p>
+                            <span class="badge text-bg-secondary">HTML</span>
+                            <span class="badge text-bg-secondary">CSS</span>
+                            <span class="badge text-bg-secondary">Bootstrap</span>
+                        </div>
+                        <div class="card-footer text-body-secondary">
+                            2023
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <a class="btn p-0 m-0" data-bs-toggle="modal" data-bs-target="#IoTImage">
+                            <img src="pt/IOT.jpg" class="card-img-top img-fluid" alt="Smart Air Care IoT">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Miniproject: Smart Waste Management System</h5>
+                            <p class="card-text">
+                                This mini project is part of the Internet of Things (IoT) course technology to create an intelligent and efficient waste management infrastructure.
+                                This system is designed to address the challenges associated with timely waste collection, route
+                                optimization, and resource efficiency in urban environments.
+                            </p>
+                            <span class="badge text-bg-secondary">IoT</span>
+                            <span class="badge text-bg-secondary">ESP32</span>
+                            <span class="badge text-bg-secondary">C++</span>
+                        </div>
+                        <div class="card-footer text-body-secondary">
+                            2023
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <a class="btn p-0 m-0" data-bs-toggle="modal" data-bs-target="#OLED">
+                            <img src="pt/Oled.jpg" class="card-img-top img-fluid" alt="Smart Air Care IoT">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Graphic OLED</h5>
+                            <p class="card-text">
+                                It is part of the course. Microprocessors and embedded systems are responsible for displaying images on OLED screens by displaying images and symbols.
+                            </p>
+                            <span class="badge text-bg-secondary">IoT</span>
+                            <span class="badge text-bg-secondary">ESP32</span>
+                            <span class="badge text-bg-secondary">C++</span>
+                        </div>
+                        <div class="card-footer text-body-secondary">
+                            2023
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <!-- Showcase Panel End -->
+    </div>
+    <!-- Modal Start -->
+    <div class="modal fade" id="Trang" tabindex="-1" role="dialog" aria-labelledby="Trang" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Trang">Miniproject HTML</h5>
+                </div>
+                <div class="modal-body">
+                    <img src="pt/trangpage.png" class="img-fluid ">
+                    <img src="pt/destination.png" class="img-fluid">
+                    <img src="pt/blog.png" class="img-fluid">
+                    <img src="pt/hotel.png" class="img-fluid">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="IoTImage" tabindex="-1" role="dialog" aria-labelledby="IoTImage" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="IoTImage">Smart Waste Management System</h5>
+                </div>
+                <div class="modal-body">
+                    <img src="pt/Iot2.jpg" class="img-fluid">
+                    <img src="pt/Iot3.jpg" class="img-fluid">
+                    <img src="pt/iot4.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="OLED" tabindex="-1" role="dialog" aria-labelledby="OLED" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="OLED">Graphic OLED</h5>
+                </div>
+                <div class="modal-body">
+                    <img src="pt/Oled.jpg" class="img-fluid">
+                    <img src="pt/OLED1.jpg" class="img-fluid">
+                    <img src="pt/OLed2.jpg" class="img-fluid">
+                    <img src="pt/OLED3.jpg" class="img-fluid">
+                    <img src="pt/OLED4.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>      
+
+    <!-- Modal End -->
+</body>
+
+
+</body>
+
+</html>
